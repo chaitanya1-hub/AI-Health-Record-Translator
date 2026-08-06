@@ -1,0 +1,10 @@
+{
+  "name": "ai-health-record-translator-server",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Supabase Postgres Database Schema & Deno Edge Functions for AI Health Record Translator",
+  "scripts": {
+    "supabase:start": "supabase start",
+    "supabase:deploy": "supabase functions deploy process-report && supabase functions deploy qa-chat"
+  }
+}
