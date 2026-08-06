@@ -1,10 +1,20 @@
 {
   "name": "ai-health-record-translator-server",
-  "private": true,
   "version": "1.0.0",
-  "description": "Supabase Postgres Database Schema & Deno Edge Functions for AI Health Record Translator",
+  "private": true,
+  "description": "Node.js Express Backend API Server for AI Health Record Translator",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "supabase:start": "supabase start",
-    "supabase:deploy": "supabase functions deploy process-report && supabase functions deploy qa-chat"
+    "start": "node index.js",
+    "dev": "node index.js",
+    "build": "npm install"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "openai": "^4.55.0"
   }
 }
