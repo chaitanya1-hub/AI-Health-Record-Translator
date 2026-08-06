@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
+    "dev": "npm --prefix client run dev",
     "build": "cd client && npm install && npm run build",
     "start": "cd client && npm run preview"
   }
